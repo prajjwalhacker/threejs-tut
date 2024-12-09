@@ -15,6 +15,10 @@ const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
+const light = new THREE.DirectionalLight(0xFF0000, 10);
+
+scene.add( light );
+
 camera.position.z = 5;
 
 function animate() {
